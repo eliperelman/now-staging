@@ -1,0 +1,20 @@
+{
+  "name": "now-staging",
+  "version": "1.0.0",
+  "description": "Beta staging for pull requests on ZEIT Now",
+  "main": "build/index.bundle.js",
+  "repository": "eliperelman/now-staging",
+  "author": "Eli Perelman <eli@eliperelman.com>",
+  "license": "MIT",
+  "config": {
+    "preset": "neutrino-preset-node"
+  },
+  "scripts": {
+    "build": "neutrino build",
+    "start": "yarn build && node ."
+  },
+  "dependencies": {
+    "neutrino": "^3.0.3",
+    "neutrino-preset-node": "^2.4.0"
+  }
+}
